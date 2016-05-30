@@ -1,2 +1,10 @@
 # annoyotron
-An autistic Discord memeboy based of hammerandchisel's Airhornbot
+An autistic Discord memebot based of [hammerandchisel's Airhornbot](https://github.com/hammerandchisel)
+
+Annoyotron is an implementation of the [Discord API](https://discordapp.com/developers/docs/intro). Annoyotron utilizes the [discordgo](https://github.com/bwmarrin/discordgo) library, a free and open source library. Annoyotron requires Go 1.4 or higher.
+
+You'll need to get the following resources to run Annoyotron:
+github.com/Sirupsen/logrus
+github.com/bwmarrin/discordgo
+github.com/layeh/gopus
+You will also need ffmpeg installed
