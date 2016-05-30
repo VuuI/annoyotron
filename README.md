@@ -5,10 +5,10 @@ Annoyotron is an implementation of the [Discord API](https://discordapp.com/deve
 
 You'll need to get the following resources to run Annoyotron:
 
-[Sirupsen's Logrus](github.com/Sirupsen/logrus)
+[Sirupsen's Logrus](https://github.com/Sirupsen/logrus)
 
-[bwmarrin's discordgo](github.com/bwmarrin/discordgo)
+[bwmarrin's discordgo](https://github.com/bwmarrin/discordgo)
 
-[layeh's gopus](github.com/layeh/gopus)
+[layeh's gopus](https://github.com/layeh/gopus)
 
 You will also need ffmpeg installed
