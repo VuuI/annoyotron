@@ -43,7 +43,7 @@ var (
      OWNER string
      
      //Version
-     VERSION_RELEASE = "0.0.3-b"
+     VERSION_RELEASE = "1.0.4"
      
      //TIME Constant
      t0 = time.Now()
@@ -594,6 +594,11 @@ Commands: []string{
 },
 Sounds: []*Sound{
     createSound("ravioli", 10, 250),
+	createSound("hamburger", 10, 250),
+	createSound("breakfast", 10, 250),
+	createSound("igetpussy", 10, 250),
+	createSound("poosy", 10, 250),
+	createSound("heyboss", 10, 250),
 },
 }
 
@@ -977,11 +982,11 @@ func handleBotControlMessages(s *discordgo.Session, m *discordgo.MessageCreate, 
 
 func generateCommandList() string{
     var commands string
-    commands = "\n`HOLY FUCK MEMES \n\n"
+    commands = "\n**HELLO HELLO HELLO**\n`Annoyotron version 1.0.4 Commands \n\nChangelog: Added !ff, fixed !illuminati\n\n"
     commands = commands + "!damn,!deez,!hitmarker,!mmmsay,!scream,!wow,!triple,!illkillyou,!jontron,!fhritp,!tina,\n"
 	commands = commands + "!littlebot,!prettygood,!longstoryshort,!vapenation,!airhorn,!gmm,!cupoftea,!spagett,!epic,!mad\n"
     commands = commands + "!dip,!ruby,!dedodated,!trombone,!violin,!weed,!lyin,!roll,!richard,!illuminati,!bananas,!questionblock,!cricket,!spongebob\nAlso Includes all AIRHORN_SOLUTIONS commands\n`"
-    commands = commands + "\n:ok_hand: 1 spam = 1 Michael BabyRage :ok_hand:"
+    //commands = commands + "\n:ok_hand: 1 spam = 1 Michael BabyRage :ok_hand:"
     return commands
 }
 func generateStatus() string{
