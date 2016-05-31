@@ -590,7 +590,7 @@ var FILTHYFRANK *SoundCollection = &SoundCollection{
 Prefix: "ff",
 Commands: []string{
     "!ff",
-	"!filthyfrank"
+	"!filthyfrank",
 },
 Sounds: []*Sound{
     createSound("ravioli", 10, 250),
