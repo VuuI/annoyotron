@@ -985,7 +985,7 @@ func generateCommandList() string{
     commands = "\n**HELLO HELLO HELLO**\n`Annoyotron version 1.0.4 Commands \n\nChangelog: Added !ff, fixed !illuminati\n\n"
     commands = commands + "!damn,!deez,!hitmarker,!mmmsay,!scream,!wow,!triple,!illkillyou,!jontron,!fhritp,!tina,\n"
 	commands = commands + "!littlebot,!prettygood,!longstoryshort,!vapenation,!airhorn,!gmm,!cupoftea,!spagett,!epic,!mad\n"
-    commands = commands + "!dip,!ruby,!dedodated,!trombone,!violin,!weed,!lyin,!roll,!richard,!illuminati,!bananas,!questionblock,!cricket,!spongebob\nAlso Includes all AIRHORN_SOLUTIONS commands\n`"
+    commands = commands + "!dip,!ruby,!dedodated,!trombone,!violin,!weed,!lyin,!roll,!richard,!illuminati,!bananas,!questionblock,!cricket,!spongebob,!eb,!jc,!filthyfrank,!anotha\n`"
     //commands = commands + "\n:ok_hand: 1 spam = 1 Michael BabyRage :ok_hand:"
     return commands
 }
