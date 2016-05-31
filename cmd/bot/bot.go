@@ -586,6 +586,16 @@ Sounds: []*Sound{
     createSound("single", 10, 250),
 },
 }
+var FILTHYFRANK *SoundCollection = &SoundCollection{
+Prefix: "ff",
+Commands: []string{
+    "!ff",
+	"!filthyfrank"
+},
+Sounds: []*Sound{
+    createSound("ravioli", 10, 250),
+},
+}
 
 
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
@@ -629,6 +639,7 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	RICHARD,
 	SPONGEBOB,
 	MISCCRICKET,
+	FILTHYFRANK,
 }
 
 // Create a Sound struct
