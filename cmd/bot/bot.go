@@ -43,7 +43,7 @@ var (
      OWNER string
      
      //Version
-     VERSION_RELEASE = "1.0.5"
+     VERSION_RELEASE = "1.0.5-b"
      
      //TIME Constant
      t0 = time.Now()
@@ -912,6 +912,9 @@ func onReady(s *discordgo.Session, event *discordgo.Ready) {
     var status string
     status = generateStatus()
     s.UpdateStatus(0, status)
+	status = generateStatus()
+    s.UpdateStatus(0, status)
+
 }
 
 
