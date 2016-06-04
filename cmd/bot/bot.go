@@ -43,7 +43,7 @@ var (
      OWNER string
      
      //Version
-     VERSION_RELEASE = "1.0.6"
+     VERSION_RELEASE = "1.0.7"
      
      //TIME Constant
      t0 = time.Now()
@@ -621,6 +621,17 @@ Sounds: []*Sound{
     createSound("classic", 10, 250),
 },
 }
+var DATBOI *SoundCollection = &SoundCollection{
+Prefix: "datboi",
+Commands: []string{
+    "!datboi",
+},
+Sounds: []*Sound{
+    createSound("classic", 10, 250),
+    createSound("watchhim", 10, 250),
+    createSound("beat", 10, 250),
+},
+}
 
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
     DAMN,
@@ -666,6 +677,7 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	FILTHYFRANK,
 	WHY,
 	LMAO,
+	DATBOI,
 }
 
 // Create a Sound struct
@@ -1006,10 +1018,10 @@ func handleBotControlMessages(s *discordgo.Session, m *discordgo.MessageCreate, 
 
 func generateCommandList() string{
     var commands string
-    commands = "\n**HELLO HELLO HELLO**\n`Annoyotron version 1.0.6 Commands \n\nChangelog: Added !lmao\n\n"
+    commands = "\n**HELLO HELLO HELLO**\n`Annoyotron version 1.0.7 Commands \n\nChangelog: Added !datboi\n\n"
     commands = commands + "!damn,!deez,!hitmarker,!mmmsay,!scream,!wow,!triple,!illkillyou,!jontron,!fhritp,!tina,\n"
 	commands = commands + "!littlebot,!prettygood,!longstoryshort,!vapenation,!airhorn,!gmm,!cupoftea,!spagett,!epic,!mad\n"
-    commands = commands + "!dip,!ruby,!dedodated,!trombone,!violin,!weed,!lyin,!roll,!richard,!illuminati,!bananas,!questionblock,!cricket,!spongebob,!eb,!jc,!filthyfrank,!anotha,!why,!lmao\n`"
+    commands = commands + "!dip,!ruby,!dedodated,!trombone,!violin,!weed,!lyin,!roll,!richard,!illuminati,!bananas,!questionblock,!cricket,!spongebob,!eb,!jc,!filthyfrank,!anotha,!why,!lmao,!datboi\n`"
     //commands = commands + "\n:ok_hand: 1 spam = 1 Michael BabyRage :ok_hand:"
     return commands
 }
@@ -1134,15 +1146,9 @@ func onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
         return
 
     }
-		if parts[0] == "!killyourself" {
+		if parts[0] == "!datboi" {
         COUNT++
-        s.ChannelMessageSend(channel.ID, "Dial 1-800-273-TALK you fucking pussy")
-        return
-    }
-		if parts[0] == "!stop" {
-        COUNT++
-        s.ChannelMessageSend(channel.ID, "I'm sorry my memes bother you, consider joining the Bot-Free Lobby or right clicking my name in the contact list and ticking mute, alternatively you can kill yourself.")
-        return
+        s.ChannelMessageSend(channel.ID, " http://i.imgur.com/3udLX1g.gif")
     }
 		if parts[0] == "!mute" {
         COUNT++
