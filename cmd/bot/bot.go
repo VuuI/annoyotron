@@ -43,7 +43,7 @@ var (
      OWNER string
      
      //Version
-     VERSION_RELEASE = "1.0.8"
+     VERSION_RELEASE = "1.0.9"
      
      //TIME Constant
      t0 = time.Now()
@@ -644,6 +644,16 @@ Sounds: []*Sound{
 	createSound("love", 10, 250),
 },
 }
+var STOP *SoundCollection = &SoundCollection{
+Prefix: "stop",
+Commands: []string{
+    "!stop",
+	"!stopit",
+},
+Sounds: []*Sound{
+    createSound("classic", 10, 250),
+},
+}
 
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
     DAMN,
@@ -691,6 +701,7 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	LMAO,
 	DATBOI,
 	BABYGIRL,
+	STOP,
 }
 
 // Create a Sound struct
@@ -1031,10 +1042,10 @@ func handleBotControlMessages(s *discordgo.Session, m *discordgo.MessageCreate, 
 
 func generateCommandList() string{
     var commands string
-    commands = "\n**HELLO HELLO HELLO**\n`Annoyotron version 1.0.8 Commands \n\nChangelog: Added !babygirl\n\n"
+    commands = "\n**HELLO HELLO HELLO**\n`Annoyotron version 1.0.9 Commands \n\nChangelog: Added !stop\n\n"
     commands = commands + "!damn,!deez,!hitmarker,!mmmsay,!scream,!wow,!triple,!illkillyou,!jontron,!fhritp,!tina,\n"
 	commands = commands + "!littlebot,!prettygood,!longstoryshort,!vapenation,!airhorn,!gmm,!cupoftea,!spagett,!epic,!mad\n"
-    commands = commands + "!dip,!ruby,!dedodated,!trombone,!violin,!weed,!lyin,!roll,!richard,!illuminati,!bananas,!questionblock,!cricket,!spongebob,!eb,!jc,!filthyfrank,!anotha,!why,!lmao,!datboi\n`"
+    commands = commands + "!dip,!ruby,!dedodated,!trombone,!violin,!weed,!lyin,!roll,!richard,!illuminati,!bananas,!questionblock,!cricket,!spongebob,!eb,!jc,!filthyfrank,!anotha,!why,!lmao,!datboi,!babygirl\n`"
     //commands = commands + "\n:ok_hand: 1 spam = 1 Michael BabyRage :ok_hand:"
     return commands
 }
