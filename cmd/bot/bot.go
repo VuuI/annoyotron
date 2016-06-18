@@ -655,6 +655,17 @@ Sounds: []*Sound{
 },
 }
 
+var RACIST *SoundCollection = &SoundCollection{
+Prefix: "racist",
+Commands: []string{
+    "!racist",
+    "!nottoberacist",
+},
+Sounds: []*Sound{
+    createSound("classic", 10, 250),
+},
+}
+
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
     DAMN,
     DEEZNUTZ,
@@ -702,6 +713,7 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	DATBOI,
 	BABYGIRL,
 	STOP,
+	RACIST,
 }
 
 // Create a Sound struct
