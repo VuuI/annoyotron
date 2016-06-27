@@ -649,6 +649,8 @@ Prefix: "stop",
 Commands: []string{
     "!stop",
 	"!stopit",
+	"!cummies",
+    "!daddy",
 },
 Sounds: []*Sound{
     createSound("classic", 10, 250),
@@ -663,6 +665,29 @@ Commands: []string{
 },
 Sounds: []*Sound{
     createSound("classic", 10, 250),
+},
+}
+
+var NORMIES *SoundCollection = &SoundCollection{
+Prefix: "normies",
+Commands: []string{
+    "!gbp",
+    "!tendies",
+},
+Sounds: []*Sound{
+    createSound("classic", 10, 250),
+},
+}
+
+var GAY *SoundCollection = &SoundCollection{
+Prefix: "gay",
+Commands: []string{
+    "!gay",
+},
+Sounds: []*Sound{
+    createSound("classic", 10, 250),
+    createSound("faggot", 10, 250),
+    createSound("dude", 10, 250),
 },
 }
 
@@ -714,6 +739,8 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	BABYGIRL,
 	STOP,
 	RACIST,
+	NORMIES,
+	GAY,
 }
 
 // Create a Sound struct
