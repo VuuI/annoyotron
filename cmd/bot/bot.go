@@ -565,7 +565,7 @@ Sounds: []*Sound{
     createSound("fryers", 10, 250),
     createSound("fryersfull", 10, 250),
     createSound("leg", 10, 250),
-	createSound("violinfull", 10, 250),
+    createSound("violinfull", 10, 250),
     createSound("violin", 10, 250),
     createSound("ugly", 10, 250),
     createSound("horse", 10, 250),
@@ -573,6 +573,7 @@ Sounds: []*Sound{
     createSound("texas", 10, 250),
     createSound("kevin", 10, 250),
     createSound("correct", 10, 250),
+    createSound("drink", 10, 250),
 },
 }
 var MISCCRICKET *SoundCollection = &SoundCollection{
@@ -1092,25 +1093,30 @@ func generateStatus() string{
 	rand.New(rand.NewSource(99))
     status := []string{
 		"with this pussy",
-		"with Patricks fursuit",
+		"with Patrick's fursuit",
 		"Nazi Gainers",
 		"with dat boi",
 		"supreme meme creme",
 		"( ͡° ͜ʖ ͡°)",
 		"420 noscope",
-		"Shane's mom",
-		"with Griffs bbq sauce",
-		"with Sams bodypillow",
+		"with Shane's mom",
+		"with Griff's BBQ sauce",
+		"with Sam's bodypillow",
 		"Town of Gaylem",
 		"with Jacks goat",
-		"with Kevins waffleiron",
-		"with Johns skinflute",
-		"with Mikes comics",
-		"with Derricks dice",
+		"with Kevin's waffleiron",
+		"with John's skinflute",
+		"with Mike's comics",
+		"with Derrick's loud dice",
 		"Eating gelato with Sam",
 		"backdoor sluts 9",
 		"Sluts and Butts IX",
 		"Beyond Earth. LOL JK",
+		"Earning POTG as Bastion"
+		"Earning POTG as Hanzo"
+		"Earning POTG as Mei"
+		"Earning POTG as Reinhardt"
+		"Earning POTG as Genji"
 	}
     return status[rand.Intn(len(status))]
 }
