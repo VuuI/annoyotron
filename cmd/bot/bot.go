@@ -1112,11 +1112,11 @@ func generateStatus() string{
 		"backdoor sluts 9",
 		"Sluts and Butts IX",
 		"Beyond Earth. LOL JK",
-		"Earning POTG as Bastion"
-		"Earning POTG as Hanzo"
-		"Earning POTG as Mei"
-		"Earning POTG as Reinhardt"
-		"Earning POTG as Genji"
+		"Earning POTG as Bastion",
+		"Earning POTG as Hanzo",
+		"Earning POTG as Mei",
+		"Earning POTG as Reinhardt",
+		"Earning POTG as Genji",
 	}
     return status[rand.Intn(len(status))]
 }
