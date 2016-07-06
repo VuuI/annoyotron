@@ -43,7 +43,7 @@ var (
      OWNER string
      
      //Version
-     VERSION_RELEASE = "1.0.9"
+     VERSION_RELEASE = "1.1"
      
      //TIME Constant
      t0 = time.Now()
@@ -692,6 +692,26 @@ Sounds: []*Sound{
 },
 }
 
+var CLEO *SoundCollection = &SoundCollection{
+Prefix: "cleo",
+Commands: []string{
+    "!cleo",
+},
+Sounds: []*Sound{
+    createSound("classic", 10, 250),
+},
+}
+
+var MYSTERY *SoundCollection = &SoundCollection{
+Prefix: "mystery",
+Commands: []string{
+    "!mystery",
+},
+Sounds: []*Sound{
+    createSound("classic", 10, 250),
+},
+}
+
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
     DAMN,
     DEEZNUTZ,
@@ -742,6 +762,8 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	RACIST,
 	NORMIES,
 	GAY,
+	CLEO,
+	MYSTERY,
 }
 
 // Create a Sound struct
@@ -1082,10 +1104,11 @@ func handleBotControlMessages(s *discordgo.Session, m *discordgo.MessageCreate, 
 
 func generateCommandList() string{
     var commands string
-    commands = "\n**HELLO HELLO HELLO**\n`Annoyotron version 1.0.9 Commands \n\nChangelog: Added !stop\n\n"
+    commands = "\n**HELLO HELLO HELLO**\n`Annoyotron version 1.1 Commands \n\nChangelog: Added !cleo,!mystery\n\n"
     commands = commands + "!damn,!deez,!hitmarker,!mmmsay,!scream,!wow,!triple,!illkillyou,!jontron,!fhritp,!tina,\n"
 	commands = commands + "!littlebot,!prettygood,!longstoryshort,!vapenation,!airhorn,!gmm,!cupoftea,!spagett,!epic,!mad\n"
-    commands = commands + "!dip,!ruby,!dedodated,!trombone,!violin,!weed,!lyin,!roll,!richard,!illuminati,!bananas,!questionblock,!cricket,!spongebob,!eb,!jc,!filthyfrank,!anotha,!why,!lmao,!datboi,!babygirl\n`"
+    commands = commands + "!dip,!ruby,!dedodated,!trombone,!violin,!weed,!lyin,!roll,!richard,!illuminati,!bananas,!questionblock,!cricket,!spongebob,!eb,!jc,!filthyfrank,!anotha,!why,!lmao,!datboi,!babygirl\n"
+	commands = commands + "!babygirl,!stop,!racist,!gpb,!gay,!cleo,!mystery\n`"
     //commands = commands + "\n:ok_hand: 1 spam = 1 Michael BabyRage :ok_hand:"
     return commands
 }
@@ -1218,6 +1241,10 @@ func onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		if parts[0] == "!datboi" {
         COUNT++
         s.ChannelMessageSend(channel.ID, " http://i.imgur.com/3udLX1g.gif")
+	}
+		if parts[0] == "!mystery" {
+        COUNT++
+        s.ChannelMessageSend(channel.ID, " http://i1.kym-cdn.com/photos/images/newsfeed/001/029/129/650.gif")
     }
 		if parts[0] == "!mute" {
         COUNT++
