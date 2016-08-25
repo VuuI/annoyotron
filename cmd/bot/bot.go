@@ -712,6 +712,20 @@ Sounds: []*Sound{
 },
 }
 
+var ZUSE *SoundCollection = &SoundCollection{
+Prefix: "zuse",
+Commands: []string{
+    "!zuse",
+	"!bullet",
+},
+Sounds: []*Sound{
+    createSound("bullet", 10, 250),
+	createSound("blat", 10, 250),
+	createSound("bulletx3", 10, 250),
+	createSound("bullet2", 10, 250),
+},
+}
+
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
     DAMN,
     DEEZNUTZ,
@@ -764,6 +778,7 @@ var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	GAY,
 	CLEO,
 	MYSTERY,
+	ZUSE,
 }
 
 // Create a Sound struct
